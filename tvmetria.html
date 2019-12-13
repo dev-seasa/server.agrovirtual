@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="keywords" content="Stretch a Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+
+    Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+
+    
+
+    
+
+
+
+    <!-- Latest compiled and minified CSS -->
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+
+
+        <!-- Optional theme -->
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+
+
+        <!-- Latest compiled and minified JavaScript -->
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+    
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+        <script>
+
+            jQuery(document).ready(function(){
+
+                $(".oculto").hide();              
+
+                    $(".inf").click(function(){
+
+                        var nodo = $(this).attr("href");  
+
+                
+
+                        if ($(nodo).is(":visible")){
+
+                            $(nodo).hide();
+
+                            return false;
+
+                        }else{
+
+                        $(".oculto").hide("slow");                             
+
+                        $(nodo).fadeToggle("fast");
+
+                        return false;
+
+                    }
+
+                });
+
+            }); 
+
+            </script>
+
+
+
+        <title>TvMetria</title>
+
+        </head>
+
+        <body>
+
+
+
+        <section>
+
+            <div class="container">
+
+            <div class="table-responsive">
+
+				<table class="table table-hover table-striped">
+
+                <tr class="danger">
+
+                        <th>Video Streaming <button type="button" class="inf btn btn-danger" href="#info1">Ver</button></th>
+
+                        <th></th>
+
+                        <th></th>
+
+                        <th></th>
+
+                    </tr>
+
+
+
+            <tr class="oculto" id="info1">
+
+                <td><iframe width="560" height="315" src="https://www.youtube.com/embed/jN1vSJ2st98" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+
+
+
+            </tr>
+
+				</table>
+
+				</div>
+
+            </div>
+
+        </section>
+
+
+
+        <script type="text/javascript">
+
+            $(document).ready(function () {
+
+
+
+                //Vertical Tab
+
+                $('#parentVerticalTab').easyResponsiveTabs({
+
+                    type: 'vertical', //Types: default, vertical, accordion
+
+                    width: 'auto', //auto or any width like 600px
+
+                    fit: true, // 100% fit in a container
+
+                    closed: 'accordion', // Start closed if in accordion view
+
+                    tabidentify: 'hor_1', // The tab groups identifier
+
+                    activate: function (event) { // Callback function if tab is switched
+
+                        var $tab = $(this);
+
+                        var $info = $('#nested-tabInfo2');
+
+                        var $name = $('span', $info);
+
+                        $name.text($tab.text());
+
+                        $info.show();
+
+                    }
+
+                });
+
+            });
+
+        </script>
+
+
+
+    </body>
+
+</html>
+

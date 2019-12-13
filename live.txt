@@ -1,0 +1,19 @@
+Reading last updated record from device
+
+Current local time and date: Fri Dec 13 17:57:01 2019
+
+interval:                 1d
+indoor humidity           32
+outdoor humidity          54
+indoor temperature     33.1
+outdoor temperature    20.2
+wind speed                 3.7
+wind gust                  4.8
+wind direction           NNW
+rain                       0.9
+rain 2                    23.6
+other 1                    0
+other 2                    0
+pressure(hPa)           1011.1
+Current history pos:       0
+
